@@ -1,0 +1,28 @@
+model:
+  vocab_size: 0
+  block_size: 128
+  n_layers: 4
+  n_heads: 4
+  n_embd: 256
+  dropout: 0.1
+train:
+  batch_size: 32
+  max_iters: 5000
+  learning_rate: 0.0003
+  eval_interval: 200
+  eval_iters: 50
+  seed: 1337
+  device: auto
+data:
+  data_path: data/raw.txt
+  split_ratio: 0.9
+infer:
+  max_new_tokens: 200
+  temperature: 1.0
+  top_k: 50
+  top_p: 0.95
+  model_path: outputs/model.pt
+  vocab_path: outputs/vocab.json
+  model_config_path: outputs/model_config.json
+out:
+  dir: outputs

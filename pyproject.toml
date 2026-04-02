@@ -1,0 +1,14 @@
+[project]
+name = "mini-gpt-learning"
+version = "0.1.0"
+description = "A minimal GPT learning project for beginners"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch",
+  "numpy",
+  "pyyaml",
+]
+
+[tool.uv]
+package = false
